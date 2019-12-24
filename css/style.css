@@ -210,3 +210,18 @@ img {
 .foo a:active {
   text-decoration: underline overline;
 }
+
+#submit {
+  font-family: Verdana;
+  font-size: 26px;
+  color: orange;
+  background-color: black;
+  width: 20%;
+  padding: 14px;
+  border-color: orange;
+  border-style: inset;
+}
+
+#submit:active {
+  font-weight: bold;
+}
