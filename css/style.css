@@ -1,8 +1,5 @@
 body {
   background-image: url("../slike/cyan.jpg");
-  /* background-size: auto; */
-  /* background-size: 100% 100%; */
-  /* background-repeat: repeat-y; */
   animation: slika_animacija 1000s linear infinite alternate;
   background-color: #043633;
   color: #1feb3f;
@@ -12,20 +9,8 @@ body {
   font-family: verdana montserrat;
 }
 
-/* ::-moz-selection {
-color: yellow;
-background: red;
-} */
-::selection {
-  color: purple;
-  background: black;
-}
-
 .body {
-  /* display:grid;
-  grid-template-columns: 20% auto; */
   text-align: left;
-  /* animation: slika_animacija 1500s linear infinite alternate; */
   animation-duration: 1500s;
 }
 
@@ -39,40 +24,39 @@ background: red;
   padding-bottom: 1vh;
 }
 
-/* .body ul{
-
-border-style: outset;
-background-color: #043633;
-} */
-/*#cv ul,p,h1,h3{
-grid-column: 2;
-} */
-#projects {
+#projects_body {
   animation-duration: 1000s;
 }
 
-#riddles {
+#riddle_body {
   text-align: center;
 }
 
-#naslov {
+/* ::-moz-selection {
+color: yellow;
+background: red;
+} */
+::selection {
+  color: purple;
+  background: black;
+}
+
+#index_spine {
   display: grid;
   grid-template-columns: auto 45% 35%;
 }
 
-#naslov li {
+#index_spine li {
   list-style-type: none;
 }
 
-#naslov>ul {
-  /* background-color: #043633; */
+#index_spine>ul {
   display: grid;
   grid-template-rows: 10% 18% auto;
 }
 
-#naslov>ul p {
+#index_spine>ul p {
   border-style: ridge;
-  /* border-color: red; */
   background-color: #043633;
   line-height: 28px;
   padding: 1vh;
@@ -97,11 +81,6 @@ h2, h3, h4 {
   padding: 5px;
 }
 
-.nav {
-  display: grid;
-  grid-template-rows: 27% auto 27%;
-}
-
 a:link {
   font-size: 23px;
   color: #10ebe9;
@@ -117,13 +96,6 @@ a:hover {
 
 a:active {
   color: #1414e9;
-}
-
-#portrait {
-  border-radius: 50%;
-  width: 100%;
-  margin-top: 150px;
-  border-style: groove;
 }
 
 @keyframes meni_animacija {
@@ -143,57 +115,57 @@ a:active {
 
   100% {
     background-position: 0 50000px;
-    /*10000%;*/
   }
 }
 
-.navbar {
+.index_navbar_div {
+  display: grid;
+  grid-template-rows: 32% auto 5%;
+}
+
+.left_navbar {
   margin-left: -50px;
   grid-row: 2;
   background-color: black;
   display: grid;
   animation-name: meni_animacija;
   animation-duration: 4s;
-  /* align-items: center; */
   text-align: center;
+  /* border-bottom-style: double;
+  border-top-style: double;
+  border-color: orange; */
 }
 
-.navbar a {
+.left_navbar a {
   display: block;
-  /* height: auto; */
   color: orange;
   padding: 50px;
   font-weight: bold;
   text-decoration: none;
   border-right-style: double;
+  font-size: 24px;
 }
 
-.navbar a:hover {
+.left_navbar a:hover {
   background-color: #321111;
   color: orange;
-  /* font-size: 28px; */
-  text-decoration: underline;
+  text-decoration: overline;
 }
 
-.navbar a:active {
+.left_navbar a:active {
   text-decoration: underline overline;
 }
 
-.foo {
+.top_navbar {
   margin-left: -50px;
-  /* grid-row: 2; */
-  /* background-color: black; */
-  /* display: grid; */
   animation-name: meni_animacija;
   animation-duration: 5s;
-  /* align-items: center; */
   text-align: center;
 }
 
-.foo a {
+.top_navbar a {
   background-color: black;
   display: inline;
-  /* height: auto; */
   color: orange;
   padding: 25px;
   font-weight: bold;
@@ -201,17 +173,33 @@ a:active {
   border-style: double;
 }
 
-.foo a:hover {
+.top_navbar a:hover {
   background-color: #321111;
   color: orange;
-  text-decoration: underline;
+  text-decoration: overline;
 }
 
-.foo a:active {
+.top_navbar a:active {
   text-decoration: underline overline;
 }
 
-#submit {
+#index_portrait {
+  border-radius: 50%;
+  width: 100%;
+  margin-top: 150px;
+  border-style: groove;
+  border-color: orange;
+}
+
+#index_info {
+  margin-left: 0px;
+  color: #e6f11b;
+  background-color: black;
+  border-color: orange;
+  line-height: normal;
+}
+
+#riddle_submit {
   font-family: Verdana;
   font-size: 26px;
   color: orange;
@@ -222,15 +210,15 @@ a:active {
   border-style: double;
 }
 
-#submit:active {
+#riddle_submit:active {
   font-weight: bold;
 }
 
-#submit:hover {
+#riddle_submit:hover {
   background-color: #321111;
 }
 
-#knight {
+#riddle_knight {
   width: 100%;
   border-style: outset;
   border-color: #443322;
