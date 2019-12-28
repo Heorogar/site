@@ -1,5 +1,4 @@
-// document.getElementById('foo').innerHTML += 'Port Number: ' + location.port;
-
+/*jshint esversion: 6 */
 document.getElementById('index_info').innerHTML += 'Platform: ' + navigator.platform;
 
 document.getElementById('index_info').innerHTML += '<br><br> Browser: ' + navigator.appName;

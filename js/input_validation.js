@@ -1,3 +1,4 @@
+/*jshint esversion: 8 */
 function validateInput() {
   let forms = document.getElementsByTagName("input");
   let radios = document.getElementsByName(
