@@ -224,7 +224,7 @@ a:active {
   border-color: #443322;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 480px) {
   #index_spine {
     display: initial;
   }
@@ -235,7 +235,15 @@ a:active {
     width: 80%;
   }
 
-  .top_navbar {
-    margin-left: 0px;
+  .top_navbar a {
+    display: block;
+  }
+
+  .text_input {
+    width: 100%;
+  }
+
+  #riddle_submit {
+    width: 100%;
   }
 }
