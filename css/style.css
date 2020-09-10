@@ -234,4 +234,8 @@ a:active {
     margin-right: auto;
     width: 80%;
   }
+
+  .top_navbar {
+    margin-left: 0px;
+  }
 }
