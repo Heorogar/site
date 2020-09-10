@@ -5,7 +5,20 @@ function validateInput() {
     "gnu");
   let checkboxes = document.getElementsByName("runtime");
 
-  if ((forms.clock.value.toLowerCase() == "cpu" || forms.clock.value.toLowerCase() == "central processing unit") && forms.mephisto.value.toLowerCase() == "documentation" && forms.dungeon.value.toLowerCase() == "linux" && radios[1].checked && checkboxes[0].checked == false && checkboxes[1].checked == false && checkboxes[2].checked && checkboxes[3].checked) {
+  let storage = {
+    clock: forms.clock.value.toLowerCase(),
+    mephisto: forms.mephisto.value.toLowerCase(),
+    dungeon: forms.dungeon.value.toLowerCase(),
+    js: radios[1].checked,
+    executable: checkboxes[0].checked,
+    binary: checkboxes[1].checked,
+    binary_fool: checkboxes[2].checked,
+    environment: checkboxes[3].checked
+  };
+
+  localStorage.setItem("json", JSON.stringify(storage));
+
+  if ((storage.clock == "cpu" || storage.clock == "central processing unit") && storage.mephisto == "documentation" && storage.dungeon == "linux" && storage.js && storage.executable == false && storage.binary == false && storage.binary_fool && storage.environment) {
     $('p').hide();
     $('#riddle_submit').hide();
     $("#riddle_knight").show();
