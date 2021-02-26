@@ -15,43 +15,44 @@
 	<h1>Solve Mine Riddles, Earn Mine Mail</h1>
 	<nav class="top_navbar">
 		<a href="../index.html">Home</a>
-		<a href="cv.html">Curriculum Vitae</a>
-		<a href="projects.html">Projects</a>
+		<a href="../slike/Curriculum_Vitae.pdf">Curriculum Vitae</a>
 		<a href="riddle.html">Riddles</a>
 	</nav><br>
-	<p><i>Stallman Stallman on the wall,<br>
-			Who is the senselest of them all?</i><br><br>
-		<input type="radio" name="gnu" value="java">'Tis Java of the Sun<br>
-		<input type="radio" name="gnu" value="js">'Tis JavaScript of the Netscape<br>
-		<input type="radio" name="gnu" value="cpp">'Tis C++ of the Bjarne<br>
-		<input type="radio" name="gnu" value="python">'Tis Python of the Monty
-	</p>
-	<p><i>When the system an app doth runneth,<br>
-			Wherefrom the runtime doth cometh?</i><br><br>
-		<input type="checkbox" name="runtime" value="executable">The executable<br>
-		<input type="checkbox" name="runtime" value="binary">The binary<br>
-		<input type="checkbox" name="runtime" value="binary_fool">The binary you fool<br>
-		<input type="checkbox" name="runtime" value="environment">The platform's runtime environment o fool thou</p>
-	<p><i>What hath four rings yet fingers none?<br>
-			Not unlike a clock doth it run.</i><br><br>
-		<input type="text" class="text_input" name="clock" size="40"></p>
-	<p><i>Mephistopheles frightened be,<br>
-			From imprisonment and impeachment he,<br>
-			The holy book hath made him flee,<br>
-			Whatever did the demon see?</i><br><br>
-		<input type="text" class="text_input" name="mephisto" size="40"></p>
-	<p><i>Harken now the words of yore,<br>
-			Hence have wise men come afore,<br>
-			Enter now the age old door,<br>
-			Whence did all demand encore.</i><br><br>
-		<input type="text" class="text_input" name="dungeon" size="40"></p>
-	<input type="submit" id="riddle_submit" value="Have at thee!">
-	<p id="riddle_reward"><i>A master of poetry be thee,<br>
-			A word and lock-smith yee,<br>
-			Thine is the world of binary,<br>
-			A brother thou art to me.</i><br><br>
-		<i>Mine mail revealed must be:</i><br>
-		alek.businessfon@gmail.com</p>
+	<form method="get" name="form" action="./php/connection.php">
+		<p><i>Stallman Stallman on the wall,<br>
+				Who is the senselest of them all?</i><br><br>
+			<input type="radio" name="gnu" value="java">'Tis Java of the Sun<br>
+			<input type="radio" name="gnu" value="js">'Tis JavaScript of the Netscape<br>
+			<input type="radio" name="gnu" value="cpp">'Tis C++ of the Bjarne<br>
+			<input type="radio" name="gnu" value="python">'Tis Python of the Monty
+		</p>
+		<p><i>When the system an app doth runneth,<br>
+				Wherefrom the runtime doth cometh?</i><br><br>
+			<input type="checkbox" name="runtime" value="executable">The executable<br>
+			<input type="checkbox" name="runtime" value="binary">The binary<br>
+			<input type="checkbox" name="runtime" value="binary_fool">The binary you fool<br>
+			<input type="checkbox" name="runtime" value="environment">The platform's runtime environment o fool thou</p>
+		<p><i>What hath four rings yet fingers none?<br>
+				Not unlike a clock doth it run.</i><br><br>
+			<input type="text" class="text_input" name="clock" size="40"></p>
+		<p><i>Mephistopheles frightened be,<br>
+				From imprisonment and impeachment he,<br>
+				The holy book hath made him flee,<br>
+				Whatever did the demon see?</i><br><br>
+			<input type="text" class="text_input" name="mephisto" size="40"></p>
+		<p><i>Harken now the words of yore,<br>
+				Hence have wise men come afore,<br>
+				Enter now the age old door,<br>
+				Whence did all demand encore.</i><br><br>
+			<input type="text" class="text_input" name="dungeon" size="40"></p>
+		<input type="submit" id="riddle_submit" value="Have at thee!">
+		<p id="riddle_reward"><i>A master of poetry be thee,<br>
+				A word and lock-smith yee,<br>
+				Thine is the world of binary,<br>
+				A brother thou art to me.</i><br><br>
+			<i>Mine mail revealed must be:</i><br>
+			alek.businessfon@gmail.com</p>
+	</form>
 	<img id="riddle_knight" src="../slike/white_knight.jpg" />
 	<script src="../js/input_validation.js"></script>
 </body>
